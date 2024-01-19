@@ -12,12 +12,16 @@ CSS rules to specify families
 
 body{
     background: #948564;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .quote-box{
     background: #fff;
     width: 600px;
-    position: absolute;
     top: 50%;
     left:50% ;
     transform: translate(-50%, -50%);
@@ -25,6 +29,8 @@ body{
     border-radius: 10px;
     text-align:center;
     box-shadow:0 10px 20px 0px rgba(0,0,0,0.15);
+    position: absolute;
+
 }
 
 .quote-box h2 {
@@ -108,8 +114,8 @@ body{
 
  @media only screen and (max-width: 600px) {
     .quote-box {
-        width: 90%;
-        padding: 20px;
+        width: 60%;
+        padding: 10px;
     }
 
     .quote-box h2 {
@@ -131,4 +137,9 @@ body{
         width: 16px;
         margin-right: 8px;
     }
- }
+ 
+ .quote-box button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+      }     }
